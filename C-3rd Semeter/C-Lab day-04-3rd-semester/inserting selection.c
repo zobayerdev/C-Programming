@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<conio.h>
 
 void selection( int n, int array[ ], int c, int d,int  t, int flag ){
 
@@ -18,13 +19,13 @@ void selection( int n, int array[ ], int c, int d,int  t, int flag ){
       array[d+1] = t;
   }
 
-  printf("Sorted list :\n");
+  printf("\nInsertation-Sorted list :\n");
 
   for (c = 0; c <= n - 1; c++) {
     printf("%d ", array[c]);
   }
 
-  return 0;
+getch();
 
 }
 
@@ -32,10 +33,10 @@ int main()
 {
   int n, array[1000], c, d, t, flag = 0;
 
-  printf("Enter number of elements\n");
+  printf("Enter number of elements:   ");
   scanf("%d", &n);
 
-  printf("Enter %d integers\n", n);
+  printf("\nEnter %d integers:  ", n);
   for (c = 0; c < n; c++)
     {
     scanf("%d", &array[c]);

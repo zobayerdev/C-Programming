@@ -29,6 +29,8 @@ int main()
     char array[100];
     printf("Enter number of elements :  ");
     scanf("%d",&n);
+
+
     printf("\nEnter  %d  Number:   ", n);
     for(i = 0; i < n; i++)
     scanf("%s",&array[i]);
